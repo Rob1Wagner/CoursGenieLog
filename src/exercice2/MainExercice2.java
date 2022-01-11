@@ -14,7 +14,14 @@ public class MainExercice2 implements Exo2 {
      */
     @Override
     public void displayPersonFromChambery() {
-        System.out.println("todo");
+
+        TxtHelper.getDataFromTxt("server.txt");
+        TxtHelper.clearDataLocal();
+        if (line.getCityOfBirth() == "Chambéry"){
+            TxtHelper.insertDataInTxt(line, "local.txt");
+        }
+        TxtHelper.getDataFromTxt("server.txt");
+        
     }
 
     /*

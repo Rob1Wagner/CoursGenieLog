@@ -23,7 +23,9 @@ public class MainExercice1 {
          * - Calculer le nombre de personnes nées dans chaque ville avec les données obtenues.
          * Les données contiennent une trentaine de villes, Bonne chance !
         */
-
-
+    
+        TxtHelper txthelper = new TxtHelper(); 
+        List<String> data = TxtHelper.getDataFromTxt("persons.txt");
+        parse(data);
     }
 }
